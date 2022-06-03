@@ -7,7 +7,7 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
     <meta name="description" content="Wizixo Documentation ">
     <meta name="author" content="webestica">    
     <link rel="shortcut icon" href="assets/favicon.ico">  
@@ -257,7 +257,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
         <p class="mt-4"><span class="badge badge-danger mr-2">Note:</span>Try to resize the colorful boxes and container(drag your cursor at the bottom end of whatever you want to resize and drag) and observe the behaviour of grid,, this is the best way understand what happend when content overflow or underflow.</p>
   
         <!-- CSS Method -->
-        <h2 class="mt-5 mb-3">Using The Fraction (fr) Unit</h2>
+        <h2 id="elements-slider" class="mt-5 mb-3">Using The Fraction (fr) Unit</h2>
         <p>Instead of using fixed widths for our rows/ columns, we can make our layout more flexible by using fractions. The fr unit represents one fraction of the available space in the grid container.
           Using the same HTML code, we can generate two new layouts by using the fraction unit:</p>
        
@@ -273,7 +273,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
         </code>
         </pre>
           <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none.html"></iframe>
-          <h2 class="mt-5 mb-3">1. Layout of two rows and columns of equal size</h2>
+          <h2 id="tiny-slider" class="mt-5 mb-3">1. Layout of two rows and columns of equal size</h2>
           
          
           <pre class="  language-markup"><pre class=" language-markup"><code class=" language-markup" data-lang="html">
@@ -288,7 +288,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
           </code>
           </pre></pre>
             <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none3.html"></iframe>
-            <h2 class="mt-5 mb-3">2. Layout of two rows and columns of different size</h2>
+            <h2 id="page-title" class="mt-5 mb-3">2. Layout of two rows and columns of different size</h2>
           
          
             <pre class=" language-markup"><code class=" language-markup" data-lang="html">
@@ -308,7 +308,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
                   <p style="color:#343a40!important">As you can see, larger fractions occupy more space than the smaller fractions in the available space.</p>
                 </div>
               </div>
-              <h2 class="mt-5 mb-3">3. The repeat() function</h2>
+              <h2 id="section-padding" class="mt-5 mb-3">3. The repeat() function</h2>
               <p>You can use the <mark>CSS repeat()</mark> function as an alternative for specifying the number of columns you want your grid to repeat creating.</p>
               <pre class=" language-markup"><code class=" language-markup" data-lang="html">
     
@@ -323,7 +323,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
               </pre>
                 <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none5.html"></iframe>
                 <p>Now the grid will automatically generate rows of three columns depending on the number of items! We're also using grid-auto-rows to make each generated row have the height of 100 pixels.</p>
-                <h2 class="mt-5 mb-3">4. The minmax() function</h2>
+                <h2 id="sticky-element" class="mt-5 mb-3">4. The minmax() function</h2>
               <p>Most of the times we want our layout to adapt to the content it holds, but still need some control over it.
                 The minmax() function is perfect for this, as it allows us to specify a minimum and maximum value for our rows or columns.</p>
               <h6 class="mt-3">Fixed Rows</h6>
@@ -354,7 +354,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
                 <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none6.html"></iframe>
                 <p>As you can see, the first row will get resized to fit the whole content, but the second row will maintain a min of 100px since no resizing is needed.</p>
                 
-                <h2 class="mt-5 mb-3">5. Superpower - Grid Template Areas</h2>
+                <h2 id="backtotop" class="mt-5 mb-3">5. Superpower - Grid Template Areas</h2>
               <p>Template areas are a huge help when you want to create custom layouts using CSS Grid. We typically use this in combination with grid-template-columns and also grid-template-rows to achieve a better definition of space inside our grid layout!</p>
               <pre class=" language-markup"><code class=" language-markup" data-lang="html">
     
@@ -386,7 +386,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
                  
 <!-- loading-section -->
 <section id="loading-section" class="doc-section">
-    <h2 class="section-title">Flexbox Or Grid<small>   &nbsp;- what to choose</small></h2>
+    <h2 id="support" class="section-title">Flexbox Or Grid<small>   &nbsp;- what to choose</small></h2>
     <h6 class="mt-3">1. Dimensions</h6>
     <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none8.html" frameborder="0"></iframe>
     <h6 class="mt-3">2. Wrapping Content</h6>
