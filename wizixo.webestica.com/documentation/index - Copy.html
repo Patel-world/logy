@@ -43,6 +43,13 @@
       padding: 1rem;
       margin-block-start: 0.5rem;
   }
+  svg:not(:root) {
+    overflow: hidden;
+    vertical-align: baseline !important;
+}
+  li{
+    color:#343a40!important;
+  }
      </style>
     <script>
       window.addEventListener('load', (event) => {
@@ -151,16 +158,29 @@
   
   </code>
 </pre>
+<iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none2.html"></iframe>
+<pre class=" language-markup"><code class=" language-markup" data-lang="html">
+  
+  <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+    <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+    <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr 1fr</span></span>
+    <span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+      
+  <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+
+</code>
+</pre>
   <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none.html"></iframe>
-        <p>We highly recommended to make edits and additions to the template CSS is to use the provided <mark>user-variables.scss</mark> and <mark>user.scss</mark> files located in the <mark>template/assets/scss</mark> folder.</p>
-        <ul>
-          <li><mark>user-variables.scss</mark> will contain each variable you want to edit. Simply copy the variables you need to edit from the main _variables.scss and paste it in this file. It will automatically override the default values with the new ones.</li>
-          <li><mark>_user.scss</mark> will contain styles you want to add or edit.</li>
-        </ul>
+        <p>It's that simple to create a three column layout with automatic rows and an equal gap between them!</p>
+        
         <div class="callout-block callout-warning">
           <div class="content ml-0">
-              <h4 class="callout-title"><svg width="20" height="18" class="svg-inline--fa fa-exclamation-triangle fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="exclamation-triangle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg> Compiling changes</h4>
-              <p class="text-dark mt-3">In order to see the changes, running Gulp command is required. To learn more about Gulp go the <a href="#installation-section">gulp section</a>.</p>
+              <h4 class="callout-title"><svg width="20" height="18" class="svg-inline--fa fa-exclamation-triangle fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="exclamation-triangle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg> What We Did</h4>
+              <p class="text-dark mt-3"><ol>
+                <li>Use display: grid on the parent (container) element</li>
+                <li>Use the grid-template-columns property in order to specify that our grid will contain three columns of fixed width</li>
+                <li>Use the gap property to add an equal lem gap between both the rows and the columns of the grid</li>
+              </ol></p>
           </div>
         </div>
         <p class="mt-4"><span class="badge badge-danger mr-2">Note:</span>When you update Wizixo, <b>make sure you have backup of your files</b> and not to override the user’s custom file, that may contain styles you have created already. </p>
