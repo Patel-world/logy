@@ -92,10 +92,14 @@
         id="resizable"
         class="ui-widget-content ui-resizable grid-container7"
       >
-        <div id="resizabl1" class="ui-widget-content ui-resizable grid-item1" style="background-color: blueviolet">1</div>
-        <div id="resizabl2" class="ui-widget-content ui-resizable grid-item2" style="background-color: crimson">2</div>
-        <div id="resizabl3" class="ui-widget-content ui-resizable grid-item3" style="background-color: #009688">3</div>
-        <div id="resizabl4" class="ui-widget-content ui-resizable grid-item4" style="background-color: #4caf50">4</div>
+        <div id="resizabl1" class="ui-widget-content ui-resizable grid-item1" style="background-color: blueviolet"><p style="
+          margin-block-start: 2rem;
+      ">1<br>side</p></div>
+        <div id="resizabl2" class="ui-widget-content ui-resizable grid-item2" style="background-color: crimson">2&nbsp;header</div>
+        <div id="resizabl3" class="ui-widget-content ui-resizable grid-item3" style="background-color: #009688"><p style="
+          margin-block-start: 2rem;
+      ">3<br>main</p></div>
+        <div id="resizabl4" class="ui-widget-content ui-resizable grid-item4" style="background-color: #4caf50">4&nbsp;footer</div>
       </div>
     </div>
     <style>
@@ -107,25 +111,24 @@
             "side main main"
             "footer footer footer";
        grid-template-columns: 1fr 2fr 2fr;
-       grid-template-rows:1fr 1fr 2fr 1fr;
+       grid-template-rows:1fr 2fr 2fr 1fr;
        gap:  1em;
         
     }
-    .grid-item-1 {
-       grid-area: side;
-    }
-    .grid-item-2 {
-       grid-area: header;
-  
-    }
-    .grid-item-3 {
-       grid-area: main;
-    }
-    .grid-item-4 {
-       grid-area: footer;
-    }
+    div#resizabl1 {
+    grid-area: side;
+}
+div#resizabl2 {
+    grid-area: header;
+}
+div#resizabl3 {
+    grid-area: main;
+}
+div#resizabl4 {
+    grid-area: footer;
+}
 
-      .grid-item1 {
+      .grid-item1,.grid-item2,.grid-item3,.grid-item4 {
         text-align: center;
         color: #fff;
         /* background-color: blueviolet; */
