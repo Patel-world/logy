@@ -11,8 +11,7 @@
     <meta name="description" content="Wizixo Documentation ">
     <meta name="author" content="webestica">    
     <link rel="shortcut icon" href="assets/favicon.ico">  
-    <link rel="stylesheet" href="jquery-ui.css">
-	<link rel="stylesheet" href="style.css">
+    
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- FontAwesome JS -->
     <script defer src="../../use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
@@ -22,16 +21,19 @@
     <link rel="stylesheet" href="assets/css/prism.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css"> 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#resizable" ).resizable({
-        grid: 50
-      });
-    } );
-    </script>
+    
     <style>
+      iframe {
+    width: -webkit-fill-available;
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    margin-block-start: 0.5rem;
+    height: 300px;
+}
       div#resizable {
       background-color: white;
       color: #333;
@@ -149,33 +151,7 @@
   
   </code>
 </pre>
-  <div id="resizable" class="ui-widget-content ui-resizable">
-    <div class="grid-container1">
-    <div class="grid-item1" style="
-    background-color: blueviolet;
-  ">1</div>
-    <div class="grid-item1" style="
-    background-color: crimson;
-  ">2</div>
-    <div class="grid-item1" style="
-    background-color: #009688;
-  ">3</div>
-    <div class="grid-item1" style="
-    background-color: #4caf50;
-  ">4</div>
-  </div><style>
-    .grid-container1 {
-     display: grid;
-     grid-template-columns: 100px 100px 100px;
-     gap: 1em;
-  }
-  .grid-item1 {
-    text-align: center;
-    color: #fff;
-    /* background-color: blueviolet; */
-  }
-  </style>
-  </div>
+  <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none.html"></iframe>
         <p>We highly recommended to make edits and additions to the template CSS is to use the provided <mark>user-variables.scss</mark> and <mark>user.scss</mark> files located in the <mark>template/assets/scss</mark> folder.</p>
         <ul>
           <li><mark>user-variables.scss</mark> will contain each variable you want to edit. Simply copy the variables you need to edit from the main _variables.scss and paste it in this file. It will automatically override the default values with the new ones.</li>

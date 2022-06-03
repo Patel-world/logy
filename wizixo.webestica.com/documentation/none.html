@@ -64,23 +64,38 @@
 	</script>
 	<script>
 		$( function() {
-		  $( "#resizabl" ).resizable({
+		  $( "#resizabl1" ).resizable({
+			containment: "#contur"
+		  });
+		} );
+		$( function() {
+		  $( "#resizabl2" ).resizable({
+			containment: "#contur"
+		  });
+		} );
+		$( function() {
+		  $( "#resizabl3" ).resizable({
+			containment: "#contur"
+		  });
+		} );
+		$( function() {
+		  $( "#resizabl4" ).resizable({
 			containment: "#contur"
 		  });
 		} );
 	</script>
   </head>
 
-  <body>
+  <body style="overflow: hidden; cursor: auto;">
     <div id="contur">
       <div
         id="resizable"
         class="ui-widget-content ui-resizable grid-container1"
       >
-        <div id="resizabl" class="ui-widget-content ui-resizable grid-item1" style="background-color: blueviolet">1</div>
-        <div class="grid-item1" style="background-color: crimson">2</div>
-        <div class="grid-item1" style="background-color: #009688">3</div>
-        <div class="grid-item1" style="background-color: #4caf50">4</div>
+        <div id="resizabl1" class="ui-widget-content ui-resizable grid-item1" style="background-color: blueviolet">1</div>
+        <div id="resizabl2" class="ui-widget-content ui-resizable grid-item1" style="background-color: crimson">2</div>
+        <div id="resizabl3" class="ui-widget-content ui-resizable grid-item1" style="background-color: #009688">3</div>
+        <div id="resizabl4" class="ui-widget-content ui-resizable grid-item1" style="background-color: #4caf50">4</div>
       </div>
     </div>
     <style>
