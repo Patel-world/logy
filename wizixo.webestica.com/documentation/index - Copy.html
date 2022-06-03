@@ -155,27 +155,30 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
   <div class="page-wrapper">
     <!-- ******Header****** -->
     <header id="header" class="header bg-grad">
-        <div class="container-fluid px-lg-5">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="branding mb-0">
-                <h1 class="logo">
-                    <a href="index-2.html">
-                        <img src="assets/logo-light.png" alt="logo">
-                        <span class="text-bold mt-2"> | Documentation</span>
-                    </a>
-                </h1>
-              </div><!--//logo-->
-              </div>
-              <div class="col-sm-6">
-                <ul class="text-right list-inline m-0 mt-2">
-                  <li class="list-inline-item mr-4"> <a class="btn-link" href="../index-11.html">Live Preview</a> </li>
-                  <li class="list-inline-item mr-4"> <a class="btn-link" href="https://support.webestica.com/" target="_blank">Support</a> </li>
-                </ul>
-              </div>
+      <div class="container-fluid px-lg-5">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="branding mb-0">
+              <h1 class="logo">
+                  <a href="index-2.html">
+                      
+                      <span class="text-bold mt-2" style="
+  font-size: 2rem;
+  font-weight: 900;
+">ADHYAPNA<sup style="
+  font-size: 0.5rem;
+  top: -2em;
+">&nbsp;new journey</sup></span>
+                  </a>
+              </h1>
+            </div><!--//logo-->
             </div>
-        </div><!--//container-->
-    </header><!--//header-->
+            <div class="col-sm-6">
+              
+            </div>
+          </div>
+      </div><!--//container-->
+  </header><!--//header-->
         <div class="doc-wrapper">
             <div class="container-fluid px-lg-5">
               <div class="doc-body row">
@@ -251,7 +254,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
               </ol></p>
           </div>
         </div>
-        <p class="mt-4"><span class="badge badge-danger mr-2">Note:</span>When you update Wizixo, <b>make sure you have backup of your files</b> and not to override the user’s custom file, that may contain styles you have created already. </p>
+        <p class="mt-4"><span class="badge badge-danger mr-2">Note:</span>Try to resize the colorful boxes and container(drag your cursor at the bottom end of whatever you want to resize and drag) and observe the behaviour of grid,, this is the best way understand what happend when content overflow or underflow.</p>
   
         <!-- CSS Method -->
         <h2 class="mt-5 mb-3">Using The Fraction (fr) Unit</h2>
@@ -386,1066 +389,142 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
     <h2 class="section-title">Flexbox Or Grid<small>   &nbsp;- what to choose</small></h2>
     <h6 class="mt-3">1. Dimensions</h6>
     <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none8.html" frameborder="0"></iframe>
-    <div class="section-block">
-      <p>You can change page pre-loader by changing below img path to your new pre-loader image path.</p>
-<pre>
-<code class="language-markup">
-&lt;div class="preloader"&gt;
-  &lt;img src="images/preloader.svg" alt="Pre-loader"&gt;
-&lt;/div&gt;
-
-</code>
-</pre>
-<h6 class="mt-3">How to change Preloader color?</h6>
-<p>You can change the preloader color very easily. To do so, Just open <mark>preloader.svg</mark> file in your preferable text editor and change HEX color code with your value. You will also find Instructions in comment section of SVG file when you open this in text editor.</p>
-
-
-<p class="mt-2"><span class="badge badge-danger mr-2">Note:</span> Page Pre-loader are enabled by default. If you wish to disable the page pre-loader you can simply delete above code from all HTML files. </p>
-    </div>
-</section>
-
-
-<!-- logo-section -->
-<section id="logo-section" class="doc-section">
-<h2 class="section-title">Logo Settings</h2>
-<div class="section-block">
-  <p>Logo can be changed from below code inside the <mark>header</mark> container.</p>
-<pre><code class="language-markup">&lt;a class="navbar-brand" href="index.html"&gt;
-  &lt;img src="assets/images/logo.svg" alt="Logo"&gt;
-&lt;/a&gt;
-</code>
-</pre>
-
-<h6 class="mt-3">Logo height:</h6>
-<p>By default logo height is <mark>44px</mark>. To change logo height, You should change value in <mark>$navbar-brand-height</mark> in <mark>_variables.scss</mark> file as per your need. Please note that if you increase logo height, your header height will increase automatically. You don't need to change your header height manually.</p>
-    </div>
-</section>
-
-<!-- fonts-section -->
-<section id="fonts-section" class="doc-section">
-<h2 class="section-title">Fonts</h2>
-  <div class="section-block">
-    <p>By default, Wizixo uses the Google fonts. In case, If you want to change font to any other Google fonts, Please have a look in the head part of the webpage and you will find this tag:</p>
-<pre>
-<code class="language-markup">
-&lt;!-- Google Font --&gt;
-&lt;link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CPlayfair+Display:400,400i,700,700i%7CRoboto:400,400i,500,700" rel="stylesheet"&gt;
-
-</code>
-</pre>
-  <p class="mt-3">To change the font, first go to <a href="https://fonts.google.com/" target="_blank">Google fonts</a>, choose your desired font and use the generated code.</p>
-  <p class="mt-4">If you have a need to use custom fonts, Remove above section completely and visit <a href="http://css-tricks.com/snippets/css/using-font-face/" target="_blank">Self Hosted Fonts</a></p>
-  </div>
-</section>
-
-<!-- *****************************
-        headers 
-*****************************-->
-
-<!-- headers-section -->
-<section id="headers-section" class="doc-section">
-  <h2 class="section-title">Header Types</h2>
-  <div class="section-block">
-    <p>Wizixo comes with many predefined header styles. Simply adding the Header type class name to the Header tag will activate the Header Type. The list of Header type classes and it's descriptions are provided below for the reference:</p>
-    
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Header Class name</th>
-            <th>Description</th>
-            <th>Example code</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- table row -->
-          <tr>
-            <td><mark>.navbar-light</mark></td>
-            <td>Header with white background & dark text.</td>
-            <td><pre>
-<code class="language-markup">&lt;header class="...... navbar-light"&gt;
-      ...
-&lt;/header&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.navbar-dark</mark></td>
-            <td>Header with dark background & white text. </td>
-            <td><pre>
-<code class="language-markup">&lt;header class="...... bg-dark navbar-dark"&gt;
-      ...
-&lt;/header&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.navbar-primary</mark></td>
-            <td>Header with primary background & white text. </td>
-            <td><pre>
-<code class="language-markup">&lt;header class="...... bg-primary navbar-primary"&gt;
-      ...
-&lt;/header&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.header-transparent</mark></td>
-            <td>Header with transparent background. You can use the <mark>.header-dark</mark>, <mark>.header-light</mark> or <mark>.header-primary</mark> class depending on your site background.</td>
-            <td><pre>
-<code class="language-markup">&lt;header class="...... header-transparent"&gt;
-      ...
-&lt;/header&gt;</code></pre></td>
-          </tr>
-
-          <!-- table row -->
-          <tr>
-            <td><mark>.navbar-sticky</mark></td>
-            <td>Header will stick to the top when scrolling.</td>
-            <td><pre>
-<code class="language-markup">&lt;header class="...... header-sticky"&gt;
-      ...
-&lt;/header&gt;</code></pre></td>
-          </tr>
-          
-          
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- *****************************
-        Color scheme 
-*****************************-->
-
-<section id="color-scheme" class="doc-section">
-  <h2 class="section-title">Theme color scheme</h2>
-  <div class="section-block">
-    <h4 class="mt-4">How to change theme default color scheme</h4>
-    <p>We understand your need of changing theme color scheme at ease so We've got you covered. Whether you want to work with SCSS or CSS, both methods are described below. Please note we highly recommend to go with SCSS method.</p>
-
-    <h5 class="mt-3">#1 Using SCSS</h5>
-    <p>After Completing gulp and sass setup, Copy below code and paste it in <mark>_user-variables.scss</mark> file located at <mark>template/assets/scss</mark> and then compile using gulp sass. If you are new to gulp, Please go through Gulp section <a href="#installation-section">here</a>. Follow the steps and you will be able to build your site at very ease.</p>
-    <code class="language-markup">
-      // User Variables
-      $primary:  #f5b150;
-      $theme-colors: ();
-      $theme-colors: map-merge(
-       (
-       "primary": $primary,
-       "secondary": $secondary,
-       "success": $success,
-       "info":  $info,
-       "warning": $warning,
-       "danger":  $danger,
-       "light":  $light,
-       "dark":  $dark
-       ),
-       $theme-colors
-      );
-
-      //Theme gradient Colors - Starting and ending point
-      $grad-start:  #f07a23;
-      $grad-end:  #f5b150;
-
-      $link-color: $primary;
-      $link-hover-color:   darken($link-color, 10%);
-      $navbar-light-hover-color:   $primary;
-      $navbar-light-active-color:   $primary;
-      $dropdown-link-hover-color:   $primary !important;
-      $dropdown-link-active-color:  $primary;
-    </code>
-    <p class="mt-3">By using this method, You have to change color codes only at three places and all your website color shades will be set properly.</p>
-    <p>Gulp must be running in your system to compile this. So when gulp is running, and you put above code into <mark>_user-variables.scss</mark> file and after saving the file, Gulp will compile the same and You will be automatically redirected to your default browser with site opened and changed orange color scheme.</p>
-
-    <h5 class="mt-3">#2 Using CSS</h5>
-    <p>If you want to change theme default color scheme just using CSS, You can choose one of the 2 methods (We recommend Method 2 – Using color.css)</p>
-    <p><strong>Method 1: Using style.css</strong></p>
-    <p>If you don’t want to take advantage of future updates of theme, You can change theme color by replacing your new HEX color code in style.css located in <mark>template/assets/css</mark> directory. Please note this is not recommended option.</p>
-    <p><strong>Method 2: Using color.css</strong></p>
-    <p>Please look out for color.css file in <mark>template/assets/css</mark> directory for blue color as an example. You should link that CSS at the end in head section after theme CSS like below code:</p>
-    <code class="language-markup">
-      &lt;!-- Theme CSS --&gt;
-      &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
-
-      &lt;!-- Theme Color CSS --&gt;
-      &lt;link rel="stylesheet" type="text/css" href="assets/css/color.css" /&gt;
-    </code>
-
-    <p class="mb-0">Provided color.css within theme is for blue color scheme as an example. Please replace your color codes in the same and check the output.</p>
-
-  </div>
-</section>
-
-<!-- *****************************
-            sliders 
-*****************************-->
-<section id="sliders-section" class="doc-section">
-  <h2 class="section-title">Sliders</h2>
-  <div  class="section-block">
-<!-- Tiny slider -->
-    <h5 class="mt-5" id="tiny-slider">Tiny slider</h5>
-    <p>Slider for all purposes, it lets you create a beautiful responsive slider. See Tiny slider example code below:</p>
-    <pre>
-<code class="language-markup" data-lang="html">
-  &lt;div class="tiny-slider"&gt;
-    &lt;div class="tiny-slider-inner"&gt;
-      &lt;!-- Slider items --&gt;
-      &lt;div class="item"&gt; &lt;img src="assets/images/about/01.jpg" alt=""&gt; &lt;/div&gt;
-      &lt;div class="item"&gt; &lt;img src="assets/images/about/02.jpg" alt=""&gt; &lt;/div&gt;
-      &lt;div class="item"&gt; &lt;img src="assets/images/about/03.jpg" alt=""&gt; &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  </code>
-</pre>
-<br>
-<p>We have provided Tiny Slider data attributes so you don't need to play with JavaScrips or CSS. The list of Tiny Slider data attributes type name and it's descriptions are provided below for the reference: </p>
-  <div class="table-responsive">
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Data Attributes name</th>
-          <th>Description</th>
-          <th>Available options</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- table row -->
-        <tr>
-          <td>data-arrow="true"</td>
-          <td>Enable or disable arrow</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-dots="false"</td>
-          <td>Enable or disable dots</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-mode="false"</td>
-          <td>With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</td>
-          <td>"carousel" | "gallery"/td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-axis="false"</td>
-          <td>The axis of the slider.</td>
-          <td>"horizontal" | "vertical"</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-items="1"</td>
-          <td>Slider items in all device.</td>
-          <td>Numbers (1 2 3 4 5 6 ....)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-items-xs="2"</td>
-          <td>Slider items in extra small device. start to 575px</td>
-          <td>Numbers (1 2 3 4 5 6 ....)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-items-sm="3"</td>
-          <td>Slider items in small device. 576px to 767px</td>
-          <td>Numbers (1 2 3 4 5 6 ....)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-items-md="4"</td>
-          <td>Slider items in medium device. 768px to 991px </td>
-          <td>Numbers (1 2 3 4 5 6 ....)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-items-lg="5"</td>
-          <td>Slider items in large device. 992px to 1199px</td>
-          <td>Numbers (1 2 3 4 5 6 ....)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-items-xl="6"</td>
-          <td>Slider items in extra large device. 1200 to end</td>
-          <td>Numbers (1 2 3 4 5 6 ....)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-autoplay="true"</td>
-          <td>Slider auto play enable or disable</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-autoplaytime="2000"</td>
-          <td>Slider next slide time in MS</td>
-          <td>Number MS</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-speed="1000"</td>
-          <td>Slider next slide speed (AKA: smartSpeed) in MS</td>
-          <td>Number MS</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-gutter="30"</td>
-          <td>Margin between 2 slider items in pixel</td>
-          <td>Number in px</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-edge="30"</td>
-          <td>Space on the outside (in "px").</td>
-          <td>Number in px</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-loop="true"</td>
-          <td>Slider loop enable or disable</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-autowidth="true"</td>
-          <td>If true, the width of each slide will be its natural width as a inline-block box.</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-autoheight="true"</td>
-          <td>Height of slider container changes according to each slide's height.</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-hoverpause="true"</td>
-          <td>Slider pause on mouse hover.</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-touch="true"</td>
-          <td>Activates input detection for touch devices.</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-drag="true"</td>
-          <td>Changing slides by dragging them.</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-        <!-- table row -->
-        <tr>
-          <td>data-rewind="true"</td>
-          <td>Moves to the opposite edge when reaching the first or last slide.</td>
-          <td>Boolean (true or false)</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="mt-3">See example of how to use Tiny Slider data attributes:</p>
-  <pre>
-<code class="language-markup" data-lang="html">
-  &lt;div class="tiny-slider"&gt;
-    &lt;div class="tiny-slider-inner" data-arrow="true" data-dots="false" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-sm="3" data-items-xs="2" &gt;
-      &lt;!-- Slider items --&gt;
-      &lt;div class="item"&gt; &lt;img src="assets/images/about/01.jpg" alt=""&gt; &lt;/div&gt;
-      &lt;div class="item"&gt; &lt;img src="assets/images/about/02.jpg" alt=""&gt; &lt;/div&gt;
-      &lt;div class="item"&gt; &lt;img src="assets/images/about/03.jpg" alt=""&gt; &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  </code>
-</pre>
-
-<p class="mt-3">We have provided many arrow and dots styles kindly Checkout <a href="../template/elements-tiny-slider.html">Elements Tiny Slider page</a> </p>
-</div>
- 
-</section>
-
-<!-- *****************************
-      page elements 
-*****************************-->
-
-<!-- elements section-->
-<section id="elements-section" class="doc-section">
-  <h2 class="section-title mb-5">Page Elements</h2>
-  <!-- Page titles -->
-  <h4 id="page-title">Page Titles</h4>
-  <div class="section-block">
-    <p>Use below code to display page title.</p>
-    <pre>
-<code class="language-markup">
-&lt;div class="title text-center"&gt;
-  &lt;span class="pre-title"&gt;Pre title&lt;/span&gt;
-  &lt;h2&gt;Title&lt;/h2&gt;
-  &lt;p&gt;Description&lt;/p&gt;
-&lt;/div&gt;
-
-</code>
-</pre>
-<p class="mt-2"><span class="badge badge-danger mr-2">Note:</span>Use <mark>.text-right</mark> and <mark>.text-center</mark> to display title in right align and center align.</p>
-  </div>
-
-<!-- Section padding -->
-  <h4 class="mt-4" id="section-padding" >Section padding</h4>
-  <div  class="section-block">
-    <p>Use below helper class to maintain whole website section padding:</p>
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Tag name or Class</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- table row -->
-          <tr>
-            <td><mark>&lt;section&gt;</mark> </td>
-            <td>padding top 5rem and padding bottom 3.8rem</td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.section-pt</mark></td>
-            <td>padding top 5rem</td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.section-pb</mark></td>
-            <td>padding bottom 3.8rem</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-
-  <!-- Sticky bar section-->
-  <h2 class="mt-4"  id="sticky-element" >Sticky sidebar (sticky element)</h2>
-  <div  class="section-block">
-    <p>You can easily transform your existing Sidebar Content into Sticky Content by adding <mark>.sticky-element</mark> class:</p>
-    <pre>
-<code class="language-markup">
-&lt;!-- Sidebar --&gt;
-&lt;div class="container" data-sticky-container&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="col-md-4 sidebar"&gt;
-      &lt;div data-sticky data-margin-top="80" data-sticky-for="767"&gt;
-        &lt;h2 class="mt-3 mt-md-0 mb-3"&gt;Job details&lt;/h2&gt;
-        &lt;ul class="list-unstyled p-0"&gt;
-          &lt;li class="mb-3"&gt;&lt;strong&gt;Posted:&lt;/strong&gt; 3 July 2018 &lt;/li&gt;
-          &lt;li class="mb-3"&gt;&lt;strong&gt;Location:&lt;/strong&gt; London &lt;/li&gt;
-          &lt;li class="mb-3"&gt;&lt;strong&gt;Specialism:&lt;/strong&gt; IT &lt;/li&gt;
-          &lt;li class="mb-3"&gt;&lt;strong&gt;Job type:&lt;/strong&gt; Permanent &lt;/li&gt;
-          &lt;li class="mb-3"&gt;&lt;strong&gt;Reference number:&lt;/strong&gt; CRR0001-18 &lt;/li&gt;
-          &lt;li class="mb-3"&gt;&lt;strong&gt;Contact:&lt;/strong&gt; Jessica Mores&lt;/li&gt;
-          &lt;li class="mb-3"&gt;&lt;strong&gt;Phone:&lt;/strong&gt; (+251) 854-6308 &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;a class="d-block mt-3" href="#"&gt;&lt;i class="fa fa-print me-2"&gt;&lt;/i&gt; Print&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Sidebar end--&gt;
-
-</code>
-</pre>
-
-<p class="mt-2"><span class="badge badge-danger mr-2">Note:</span> Sticky Sidebar currently works best with the Sidebar and Bootstrap Columns. use <mark>.sticky-element</mark> class inside bootstrap columns as above example. </p>
-
-<p>Sticky sidebar offset top can be set from <mark>functions.js</mark> file.</p>
-  </div>
-
-<!-- Back to top -->
-  <h2 class="mt-4" id="backtotop" >Back to top</h2>
-  <div  class="section-block">
-    <p>Use below code to display back to top. Back to top is enabled by default if you want to remove back to top then simple remove below code from all HTML files:</p>
-    <pre>
-<code class="language-markup">
-&lt;div&gt; &lt;a href="#" class="back-top btn btn-grad"&gt;&lt;i class="ti-angle-up"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/div&gt;
-
-</code>
-</pre>
-  </div>
-
-  <!-- Buttons -->
-  <h2 class="mt-4" id="buttons">Buttons</h2>
-  <div class="section-block">
-    <p>You can place button just about anywhere using the CSS Prefix <mark>.btn</mark> and the button name. The list of button type classes and it's descriptions are provided below for the reference:</p>
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Class name</th>
-            <th>Description</th>
-            <th>Example code</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-primary</mark></td>
-            <td>Primary color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-primary" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-grad</mark></td>
-            <td>Gradient color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-grad" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-dark</mark></td>
-            <td>Dark color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-dark" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-light</mark></td>
-            <td>Light color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-light" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-white</mark></td>
-            <td>White color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-white" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-secondary</mark></td>
-            <td>Secondary (dark gray) color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-secondary" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-success</mark></td>
-            <td>Success (green) color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-success" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-danger</mark></td>
-            <td>Danger (red) color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-danger" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-warning</mark></td>
-            <td>Warning (yellow) color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-warning" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-info</mark></td>
-            <td>Info (cyan) color button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-info" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-link</mark></td>
-            <td>Simple link button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-link" href="#"&gt;link&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr class="p-2 d-block"></tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-outline-primary</mark></td>
-            <td>Button with borders. To add button with border, You just need to use <mark>outline</mark> after <mark>btn</mark> prefix and then simply button type. For example, <mark>.btn-outline-dark</mark> This will create button with dark border.</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-outline-primary" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <!-- table row -->
-          <tr class="p-2 d-block"> </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-round</mark></td>
-            <td>Rounded Button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-round btn-primary" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-           <!-- table row -->
-          <tr class="p-2 d-block"> </tr>
-          <!-- table row -->
-          <tr>
-            <td></td>
-            <td>Button with icon. You can use any font icon before button name.</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-primary" href="#"&gt;
-&lt;i class="far fa-check-circle"&gt;&lt;/i&gt;Default
-&lt;/a&gt;</code></pre></td>
-          </tr>
-          <tr class="p-2 d-block"> </tr>
-          <!-- table row -->
-          <tr>
-            <td><mark>.btn-xs</mark></td>
-            <td>Use this class for mini button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-primary btn-xs" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <tr>
-            <td><mark>.btn-sm</mark></td>
-            <td>Use this class for small button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-primary btn-sm" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-          <tr>
-            <td><mark>.btn-lg</mark></td>
-            <td>Use this class for large button</td>
-            <td><pre><code class="language-markup">&lt;a class="btn btn-primary btn-lg" href="#"&gt;Button&lt;/a&gt;</code></pre></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-
-    <!-- Icons -->
-  <h2 class="mt-4" id="icons">Font icons</h2>
-  <div  class="section-block">
-    <p>We have included font awesome and Themify Icons fonts in Wizixo theme. A complete list of icons along with the class names can be found here: <a href="https://fontawesome.com/v4.7.0/cheatsheet/" target="_blank">Font awesome</a> and <a href="https://themify.me/themify-icons" target="_blank">Themify Icons</a></p>
-    <h6>Font awesome:</h6>
-    <p>You can place Font Awesome icons just about anywhere using the CSS Prefix <mark>fa</mark> and the icon's name. See below example code:</p>
-    <pre>
-<code class="language-markup">
-&lt;i class="fas fa-camera"&gt;&lt;/i&gt;
-
-</code>
-</pre>
-
-<h6 class="mt-4">Themify Icons:</h6>
-<p>You can place Themify Icons icons just about anywhere using icon's name. See below example code:</p>
-<pre>
-<code class="language-markup">
-&lt;i class="ti-arrow-up"&gt;&lt;/i&gt;
-
-</code>
-</pre>
-  </div>
-
-<!-- Google map -->
-<h2 class="mt-4" id="google-map">Google map</h2>
-<div  class="section-block">
-<p>we use google map with an iframe in wizixo </p>
-
-<h6>Google map with iFrame:</h6>
-<p>Follow below steps to create Google map iFrame.</p>
-<ul>
-  <li>Go to <a target="_blank" href="https://maps.google.com/">Google Maps</a></li>
-  <li>Type in your address in search bar and select your location from searched results or click on your location pin on the map</li>
-  <li>If you need to choose a satellite view, then select a satellite view box before going to the next step. And for street view, drag a little yellow human icon onto map.</li>
-  <li>Click on the Hamburger <i class="fa fa-bars mx-1"></i> menu icon and click on <b>Share or embed map</b></li>
-  <li>In popup, select <b>Embed a map</b> and copy HTML iFrame code</li>
-  <li>Past it in your HTML</li>
-</ul>
-<p>See example code below:</p>
-<pre>
-<code class="language-markup">
-&lt;iframe class="w-100" height="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sin!4v1586000412513!5m2!1sen!2sin"  style="border:0;" aria-hidden="false" tabindex="0"&gt;&lt;/iframe&gt;	
-
-</code>
-</pre>
-
-<!-- animations -->
-  <h2 class="mt-5" id="animations">Animations <span class="font-body">(AOS - Animate on scroll library)</span></h2>
-  <div  class="section-block">
-    <p>You can add animations to any elements in your website. Animations can be shown on scroll appear. See code example below:</p>
-<pre>
-<code class="language-markup">
-  &lt;div class="aos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"&gt;
-  ...
-  &lt;/div&gt;
-
-</code>
-</pre>
-
-<h6 class="mt-4 mb-3">The animation can be set to:</h6>
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">Fade animations</th>
-      <th scope="col">Flip animations</th>
-      <th scope="col">Slide animations</th>
-      <th scope="col">Zoom animations</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fade</td>
-      <td>flip-up</td>
-      <td>slide-up</td>
-      <td>zoom-in</td>
-    </tr>
-    <tr>
-      <td>fade-up</td>
-      <td>flip-down</td>
-      <td>slide-down</td>
-      <td>zoom-in-up</td>
-    </tr>
-    <tr>
-      <td>fade-down</td>
-      <td>flip-left</td>
-      <td>slide-left</td>
-      <td>zoom-in-down</td>
-    </tr>
-    <tr>
-      <td>fade-left</td>
-      <td>flip-right</td>
-      <td>slide-right</td>
-      <td>zoom-in-left</td>
-    </tr>
-    <tr>
-      <td>fade-right</td>
-      <td></td>
-      <td></td>
-      <td>zoom-in-right</td>
-    </tr>
-    <tr>
-      <td>fade-up-right</td>
-      <td></td>
-      <td></td>
-      <td>zoom-out</td>
-    </tr>
-    <tr>
-      <td>fade-up-left</td>
-      <td></td>
-      <td></td>
-      <td>zoom-out-up</td>
-    </tr>
-    <tr>
-      <td>fade-down-right</td>
-      <td></td>
-      <td></td>
-      <td>zoom-out-down</td>
-    </tr>
-    <tr>
-      <td>fade-down-left</td>
-      <td></td>
-      <td></td>
-      <td>zoom-out-left</td>
-    </tr>
-        <tr>
-      <td>fade-down-left</td>
-      <td></td>
-      <td></td>
-      <td>zoom-out-right</td>
-    </tr>
-  </tbody>
-</table>
-
-<p class="mt-5">You can choose one of these timing function to animate elements nicely:</p>
-<table class="table table-bordered">
-  <tbody>
-    <tr>
-			<td>linear</td>
-			<td>ease</td>
-			<td>ease-in</td>
-			<td>ease-out</td>
-			<td>ease-in-out</td>
-    </tr>
-    <tr>
-	    <td>ease-in-back</td>
-			<td>ease-out-back</td>
-			<td>ease-in-out-back</td>
-			<td>ease-in-sine</td>
-			<td>ease-out-sine</td>
-    </tr>
-    <tr>
-    	<td>ease-in-out-sine</td>
-			<td>ease-in-quad</td>
-			<td>ease-out-quad</td>
-			<td>ease-in-out-quad</td>
-			<td>ease-in-cubic</td>
-    </tr>
-    <tr>
-      <td>ease-out-cubic</td>
-			<td>ease-in-out-cubic</td>
-			<td>ease-in-quart</td>
-			<td>ease-out-quart</td>
-			<td>ease-in-out-quart</td>
-    </tr>
-  </tbody>
-</table>
-
-<h6 class="mt-4 mb-3">Advanced Options:</h6>
-<ul>
-<li><b>data-aos:</b> Change the animation type</li>
-<li><b>data-aos-duration:</b> Change the animation duration in MS</li>
-<li><b>data-aos-delay:</b> Delay before the animation starts in MS</li>
-<li><b>data-aos-offset:</b> Distance to start the animation in pixel (related to the browser bottom)</li>
-<li><b>data-aos-easing:</b> This timing functions are use to animate elements</li>
-</ul>
-<p class="mt-4">For more info please <a href="https://github.com/michalsnik/aos/tree/v2"> Visit aos.js docs</a></p>
-</div>
-
-
-</section>
-<!-- *****************************
-        helper-classes
-*****************************-->
-
-<!-- elements section-->
-<section id="helper-classes" class="doc-section">
-  <h2 class="section-title">helper classes</h2>
-  <div class="section-block">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cumque nisi sit. Ipsam magni quaerat labore eaque dolorum vitae ipsa beatae, molestias sint iure reiciendis aliquid porro vel, recusandae temporibus.
-    </p>
-  </div>
-
-  <!-- Text Colors -->
-  <h4 id="text-colors" class="mt-4">Text Colors</h4>
-  <div class="section-block">
-    <p>You can add this helper class to any element in your HTML code to set text color:</p>
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Class name</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- table row -->
-          <tr>
-            <td><mark>.text-primary</mark></td>
-            <td>Main primary color text</td>
-          </tr>
-          <tr>
-            <td><mark>.text-white</mark></td>
-            <td>White color text</td>
-          </tr>
-          <tr>
-            <td><mark>.all-text-white</mark></td>
-            <td>All White color text</td>
-          </tr>
-          <tr>
-            <td><mark>.text-dark</mark></td>
-            <td>Dark color text</td>
-          </tr>
-          <tr>
-            <td><mark>.text-grad</mark></td>
-            <td>Gradient color text</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p>You can also use <a href="https://getbootstrap.com/docs/4.0/utilities/colors/">bootstrap color classes.</a></p>
-  </div>
+    <h6 class="mt-3">2. Wrapping Content</h6>
+    <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none9.html" frameborder="0"></iframe>
+    <h6 class="mt-3">3. Overlapping Content</h6>
+    <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none10.html" frameborder="0"></iframe>
+    <h6 class="mt-3">4. Flexbox Or Grid <small>&nbsp;- what to prefer?</small></h6>
+    <ul>
+      <li>Grid is for layout and Flexbox is for alignment.</li>
+      <li>Flexbox is designed for one dimension layout - either a row or a column.</li>
+      <li>Grid is designed for two dimension layout - rows and columns at the same time</li>
+      <li>Grid has space occupying features like fractional units, and the ability for content to break grids</li>
+      <li>Flex has unique features of flexbox that you can use for example: instead of using margin-right: auto use justify-content: flex-start or align-items: start.</li>
+    </ul>
+    <style>ul li::before {
+      content: "\2022";
+      color: #8bc34a;
+      /* font-weight: bold; */
+      display: inline-block;
+      width: 1em;
+      margin-left: -1.09em;
+      font-weight: 900;
+  }
+  .btn.btn-grad {
+    --animate-duration: 1s;
+    --animate-repeat: 1;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #4cbd89;
+    --bs-secondary: #8f9397;
+    --bs-success: #28a745;
+    --bs-info: #17a2b8;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f7f8f9;
+    --bs-dark: #343a40;
+    --bs-primary-rgb: 76, 189, 137;
+    --bs-secondary-rgb: 143, 147, 151;
+    --bs-success-rgb: 40, 167, 69;
+    --bs-info-rgb: 23, 162, 184;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 247, 248, 249;
+    --bs-dark-rgb: 52, 58, 64;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-rgb: 143, 147, 151;
+    --bs-font-sans-serif: system-ui,
+    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Roboto, sans-serif;
+    --bs-body-font-size: 0.875rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.6;
+    --bs-body-color: #8f9397;
+    --bs-body-bg: #ffffff;
+    --animate-delay: 0.5s;
+    font-family: var(--bs-body-font-family);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    /* margin-bottom: 6px; */
+    outline: 0;
+    white-space: nowrap;
+    color: #ffffff;
+    background: linear-gradient(150deg, #2ab9a5 0%, #97c74e 50%, #2ab9a5 100%);
+    transition: all 0.3s ease-in-out;
+    background-size: 260% 100%;
+    background-position: right bottom;
+    border: 0;
+    line-height: 1.92;
+    width: -webkit-fill-available;
+}
+    </style>
+   <div class="callout-block callout-warning" style="
+   BACKGROUND-COLOR: aliceblue;
+">
+     <div class="content ml-0">
+         <h4 class="callout-title">Write Something to Us!</h4>
+         <p class="text-dark mt-3"></p>
+         <p></p>
+         <input class="form-control" type="text" placeholder="Name" style="
+   margin-block-end: 1rem;
+">
+         <input class="form-control" type="email" placeholder="Email" style="
+   margin-block-end: 1rem;
+"><textarea class="form-control" rows="5" placeholder="Example textarea" style="
+   margin-block-end: 1rem;
+   height: 7rem;
+"></textarea><button onclick="checkOutFormValidation()" class="btn btn-grad" style="
+   color: #fff !important;
+">Send</button>
+     </div>
+   </div>
   
-
-  <!-- Extra helper classes -->
-  <h4 id="extra-helper" class="mt-4">Extra helper classes</h4>
-  <div class="section-block">
-    <p>We have created some really useful helper classes for you. Here are a few of them:</p>
-    <ul>
-      <li><mark>.zoom-on-hover</mark> Zoom on hover </li>
-      <li><mark>.up-on-hover</mark> Slide Up on hover </li>
-      <li><mark>.primary-hover</mark> Primary color on a tag of this class </li>
-
-      <li><mark>.title-font</mark> font family primary (Poppins)</li>
-      <li><mark>.body-font</mark> font family secondary (Roboto)</li>
-      <li><mark>.alt-font</mark> font family tertiary (Playfair Display)</li>
-    </ul>
-  </div>
 </section>
 
 
-<!-- *****************************
-        Contact
-*****************************-->
-<section id="contact" class="doc-section">
-  <h2 class="section-title">Contact Form</h2>
-  <div class="section-block">
-    <p>To make contact form work, simply go to <mark>template/include/contact-action.php</mark> file. Look out for <mark>$recip_address = "info@yourdomain.com";</mark> on line number 11 and replace your email there. If you want to add multiple email recipients, Please follow the instructions written at line number 13 in <mark>contact-action.php</mark> file.</p>
-  </div>
 
-<!-- *****************************
-           tips
-*****************************-->
-<!-- tips-section -->
-<section id="tips-section" class="doc-section">
-  <h2 class="section-title">Our Tips</h2>
-  <p class="mt-3">Check out some of our tips and tricks that will speed up your website and work process.</p>
-  
-<div id="general" class="section-block">
-  <h3 class="mb-3">General tips</h3>
-    <ul>
-      <li> We recommend <a href="http://www.sublimetext.com/3" target="_blank">Sublime Text</a> software that is light-weight and super easy to use.</li>
-      <li> We recommend <a href="https://filezilla-project.org/download.php" target="_blank">FileZilla</a> FTP manager.</li>
-      <li>When you finish with your site make sure you check below points:</li>
-      <ul>
-        <li>Make sure you don't have any console error in your console log</li>
-        <li>Validate your code with <a href="https://validator.w3.org/">W3C Markup Validation Service</a></li>
-      </ul>
-    </ul>
-</div>
 
-</section>
-
-<!-- *****************************
-           FAQs
-*****************************-->
-<section id="faqs" class="doc-section">
-  <h2 class="section-title">FAQs</h2>
-  <ol class="mt-4">
-    <li class="mb-1"><p class="mb-1"><strong>Why there are no images that were in live demo?</strong></p><p class="mb-10">All images are only for demonstration purpose, however you can re-download them from sites we have listed in <a href="#credits" class="scrollto">Credits section.</a></p></li>
-    <li class="mb-1"><p class="mb-1"><strong>Why some videos might not work? </strong></p>
-      <p> Ajax methods of Jquery are used for some videos and they can work only on the real server. For the correct operation of all functions, upload your website on a real server.</p>
-    </li>
-    <li class="mb-1"><p><strong>Why contact form doesn’t work?</strong></p>
-      <p>For the correct operation of contact form, the php support is necessary. Upload your website on a server with support of PHP and PHP mail() function.</p>
-    </li>
-  </ol>
-</section>
-
-<!-- *****************************
-           Source & Credits
-*****************************-->
-<section id="credits" class="doc-section">
-  <h2 class="section-title">Source & Credits</h2>
-  <p class="mt-4">All images are only for demonstration purpose, however you can re-download them in sites below. </p>
-  
-  <h4 class="mt-5 mb-3">Images</h4>
-  <ul>
-    <li class="mb-1"><a href="https://www.freepik.com/" target="_blank">Freepik</a></li>
-    <li class="mb-1"><a href="http://nothingtochance.co/" target="_blank">Nothing to chance</a></li>
-    <li class="mb-1"><a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
-    <li class="mb-1"><a href="https://www.flaticon.com/packs/editorial-design-15" target="_blank">Flaticon</a></li>
-  </ul>
-
-  <h4 class="mt-5 mb-3">JavaScrips</h4>
-  <ul>
-    <li class="mb-1"><a href="https://getbootstrap.com/docs/" target="_blank">Bootstrap 5</a></li>
-    <li class="mb-1"><a href="https://github.com/ganlanyuan/tiny-slider" target="_blank">Tiny Sliderl</a></li>
-    <li class="mb-1"><a href="https://github.com/srexi/purecounterjs" target="_blank">Purecounter js</a></li>
-    <li class="mb-1"><a href="https://isotope.metafizzy.co/" target="_blank">isotope</a></li>
-    <li class="mb-1"><a href="https://github.com/michalsnik/aos/tree/v2" target="_blank">AOS</a></li>
-    <li class="mb-1"><a href="https://github.com/biati-digital/glightbox" target="_blank">GLightbox</a></li>
-    <li class="mb-1"><a href="https://github.com/rgalus/sticky-js" target="_blank">Sticky-js</a></li>
-    <li class="mb-1"><a href="https://github.com/luisvinicius167/ityped" target="_blank">iTyped</a></li>
-    <li class="mb-1"><a href="https://github.com/nk-o/jarallax" target="_blank">Jarallax</a></li>
-  </ul>
-
-  <h4 class="mt-5 mb-3">CSS and Fonts</h4>
-  <ul>
-    <li class="mb-1"><a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a></li>
-    <li class="mb-1"><a href="https://daneden.github.io/animate.css/" target="_blank">animate</a></li>
-    <li class="mb-1"><a href="https://themify.me/themify-icons" target="_blank">themify icons</a></li>
-    <li class="mb-1"><a href="https://fontawesome.com/v4.7.0/" target="_blank">fontawesome 5</a></li>
-    <li class="mb-1"><a href="https://fonts.google.com/" target="_blank">google fonts</a></li>
-  </ul>
-
-  <h4 class="mt-5 mb-3">PHP</h4>
-  <ul>
-    <li class="mb-1"><a href="https://github.com/PHPMailer/PHPMailer/" target="_blank">PHPMailer</a></li>
-  </ul>
-</section>
-<!-- *****************************
-           Source & Credits
-*****************************-->
-<section id="changelog" class="doc-section">
-  <h2 class="section-title">Changelog</h2>
-
-  <!-- Log -->
-  <h5 class="mt-4">v2.0.0 - 1st Oct 2021</h5>
-  <p>Wizixo v2.0 is a major rewrite of the entire template with Bootstrap 5. Migration from v1.x to v2.x is not possible.</p>
-  <ul>
-    <li class="mb-2">New</li>
-    <ul>
-      <li class="mb-2">Rebuilt Wizixo core to fully support Bootstrap to v5.1.0</li>
-      <li class="mb-2">Dropped jQuery entirely. Replace all jQuery dependent plugins to Vanilla JavaScript plugins</li>
-    </ul>
-    <li class="mb-2">Updated</li>
-    <ul>
-      <li class="mb-2">Packages and dependencies to the latest. Switched from deprecated node-sass to dart-sass</li>
-      <li class="mb-2">Offcanvas component</li>
-      <li class="mb-2">Other small changes.</li>
-    </ul>
-    <li class="mb-2">Dropped</li>
-    <ul>
-      <li class="mb-2">jQuery dependency</li>
-      <li class="mb-2">No longer supports IE</li>
-    </ul>
-  </ul>
-
-  <!-- Log -->
-  <h5 class="mt-4">v1.2.0 - 15th Feb 2021</h5>
-  <ul>
-    <li class="mb-2">Update</li>
-    <ul>
-      <li class="mb-2">Bootstrap v4.6.0</li>
-      <li class="mb-2">jQuery to v3.5.1</li>
-    </ul>
-    <li class="mb-2">Fixed</li>
-    <ul>
-      <li class="mb-2">Breadcrumb issue after updating to Bootstrap v4.6.0 <mark>/template/assets/scss/core/general.scss</mark> </li>
-    </ul>
-    <li class="mb-2">Dropped</li>
-    <ul>
-      <li class="mb-2">Node.js < 10 for development. Update your node.js to <a href="https://nodejs.org/en/"> latest LTS version.</a> You might need to run Run `npm rebuild node-sass` to download the binding for your current environment.</li>
-    </ul>
-  </ul>
-
-  <!-- Log -->
-  <h5 class="mt-4">v1.1.0 - 4th Jan 2020</h5>
-  <ul>
-    <li class="mb-2">Update</li>
-    <ul>
-      <li class="mb-2">Bootstrap 4.4.1</li>
-    </ul>
-  </ul>
-
-  <!-- Log -->
-  <h5 class="mt-4">v1.0.1 - 16 Sep 2019</h5>
-  <ul>
-    <li class="mb-2">Documentation updates</li>
-    <ul>
-      <li class="mb-2">Added: theme color scheme changing guide</li>
-      <li class="mb-2">Added: logo image changing guide</li>
-      <li class="mb-2">Updated: contact form using guide</li>
-    </ul>
-    <li class="mb-2">Fixed: contact form issue (sending e-mail 2 times)</li>
-      <ul>
-        <li>Updated <mark>template/contact.html</mark> </li>
-        <li>Updated <mark>template/assets/include/contact-action.php</mark> </li>
-      </ul>
-    <li class="mb-2">Fixed: owl carousel data-autoplay attribute</li>
-      <ul>
-        <li>Updated <mark>template/assets/js/functions.js</mark> </li>
-      </ul>
-  </ul>
-
-  <!-- Log -->
-  <h5 class="mt-4">v1.0.0 - 26 Mar 2019</h5>
-  <ul>
-    <li class="mb-2">Initial Release</li>
-  </ul>
-
-</section>
-<!-- *****************************
-           Support
-*****************************-->
-<section id="support" class="doc-section">
-  <h2 class="section-title">Support</h2>
-  <p class="mt-4">We've tried to make this documentation as easy and understandable as possible. However, in case of any difficulties with the theme, you can contact our technical support department with any suggestions regarding documentation and theme improvement.</p>
-  <ul>
-    <li class="mb-1">Generate ticket through our <a href="https://support.webestica.com/" target="_blank">Support portal</a></li>
-  </ul>
-
-  <h3 class="mb-3">
-    Included in Support:
-  </h3>
-  <ul>
-    <li class="mb-1">Fixing all issues related to original theme.</li>
-    <li class="mb-1">Answers to questions regarding theme.</li>
-    <li class="mb-1">Providing regular updates depending on your needs and feedbacks.</li>
-  </ul>
-
-  <h3 class="mb-3">
-    Not Included in Support:
-  </h3>
-  <ul>
-    <li class="mb-1">Customization of theme.</li>
-    <li class="mb-1">Specific support for third party plugins integrated in theme.</li>
-  </ul>
-  <p>Your read it entirely. Thanks!</p>
-</section>
 
                           
   </div><!--//content-inner-->
@@ -1456,61 +535,55 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
 ************************** -->
 <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
   <div id="doc-nav" class="doc-nav">
-    <nav id="doc-menu" class="nav doc-menu flex-column sticky-element">
+    <nav id="doc-menu" class="nav doc-menu flex-column sticky-element" style="">
       <a class="nav-link scrollto" href="#start">Introduction</a>
       <!-- Start -->
       <a class="nav-link scrollto" href="#getting-started-section">Start</a>
         <nav class="doc-sub-menu nav flex-column">
-          <a class="nav-link scrollto" href="#getting-started-section">Getting Started</a>
-          <a class="nav-link scrollto" href="#installation-section">Gulp</a>
-          <a class="nav-link scrollto" href="#edit-section">Customization</a>
-          <a class="nav-link scrollto" href="#loading-section">Page Loading</a>
-          <a class="nav-link scrollto" href="#logo-section">Logo Settings</a>
-          <a class="nav-link scrollto" href="#fonts-section">Fonts</a>
+          <a class="nav-link scrollto" href="#start">Introduction To CSS Grid</a>
+          <a class="nav-link scrollto" href="#installation-section">What Is CSS Grid</a>
+          
+          
+          
+          
         </nav>
       <!-- Header -->
-      <a class="nav-link scrollto" href="#headers-section">Header and sticky</a>
+      
       <!-- Color scheme -->
-      <a class="nav-link scrollto" href="#color-scheme">Theme Color scheme</a>
+      
       <!-- Page slider -->
-      <a class="nav-link scrollto" href="#elements-slider">Sliders</a>
+      <a class="nav-link scrollto" href="#elements-slider">Using The Fraction (fr) Unit</a>
         <nav class="doc-sub-menu nav flex-column">
-          <a class="nav-link scrollto" href="#tiny-slider">Tiny slider</a>
+          <a class="nav-link scrollto" href="#tiny-slider">Layout of two rows and <br>columns of equal size</a>
         </nav>
       <!-- Page Elements -->
-      <a class="nav-link scrollto" href="#elements-section">Page Elements</a>
+      
         <nav class="doc-sub-menu nav flex-column">
-          <a class="nav-link scrollto" href="#page-title">Page Title</a>
-          <a class="nav-link scrollto" href="#section-padding">Section padding</a>
-          <a class="nav-link scrollto" href="#sticky-element">Sticky sidebar</a>
-          <a class="nav-link scrollto" href="#backtotop">Back top top</a>
-          <a class="nav-link scrollto" href="#buttons">Buttons</a>
-          <a class="nav-link scrollto" href="#icons">Icons</a>
-          <a class="nav-link scrollto" href="#google-map">Google map</a>
-          <a class="nav-link scrollto" href="#animations">Animations</a>
+          <a class="nav-link scrollto" href="#page-title">Layout of two rows and <br>columns of different size</a>
+          <a class="nav-link scrollto" href="#section-padding">The repeat() function</a>
+          <a class="nav-link scrollto" href="#sticky-element">The minmax() function</a>
+          <a class="nav-link scrollto" href="#backtotop">Grid Template Areas</a>
+          
+          
+          
+          
         </nav>
       <!-- Helper Classes -->
-      <a class="nav-link scrollto" href="#helper-classes">Helper Classes</a>
-        <nav class="doc-sub-menu nav flex-column">
-          <a class="nav-link scrollto" href="#text-colors">Text Colors</a>
-          <a class="nav-link scrollto" href="#extra-helper">Extra helper classes</a>
-        </nav>
+      
+        
       <!-- Contact -->
-      <a class="nav-link scrollto" href="#contact">Contact Form</a>
+      
 
       <!-- Our Tips -->
-      <a class="nav-link scrollto" href="#tips-section">Our Tips</a>
-        <nav class="doc-sub-menu nav flex-column">
-          <!-- <a class="nav-link scrollto" href="#optimization">Optimization Tips</a> -->
-          <a class="nav-link scrollto" href="#general">General tips</a>
-        </nav>
+      
+        
       <!-- FAQs -->
-      <a class="nav-link scrollto" href="#faqs">FAQs</a>
+      
       <!-- Credit -->
-      <a class="nav-link scrollto" href="#credits">Source & Credits</a>
-      <a class="nav-link scrollto" href="#changelog">Changelog</a>
+      
+      
       <!-- Support -->
-      <a class="nav-link scrollto" href="#support">Support</a>
+      <a class="nav-link scrollto" href="#support">Flexbox Or Grid  - What To Choose</a>
 
 
 
@@ -1525,12 +598,78 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
     </div><!--//container-->
   </div><!--//doc-wrapper-->
 </div><!--//page-wrapper-->
+
+
+  
     
 <footer id="footer" class="footer text-center">
     <div class="container">
-        <small class="copyright">Copyright 2021 | <a href="https://www.webestica.com/" target="_blank">WEBESTICA</a></small>
+        <small class="copyright">Copyright 2020-22 | <a href="https://www.adhyapna.com/" target="_blank">AEITSO</a></small>
     </div><!--//container-->
 </footer><!--//footer-->
+<script>
+  function checkOutFormValidation(){
+            var custName = document.querySelector("#loading-section > div > div > input:nth-child(4)").value;
+            var custEmail = document.querySelector("#loading-section > div > div > input:nth-child(5)").value;
+            
+            var address = document.querySelector("#loading-section > div > div > textarea").value;
+            
+                if(custName != "" && custEmail != "" && address != ""){
+                     takeFormInput();
+                     document.querySelector("#loading-section > div").innerHTML=`<div class="alert alert-success" role="alert">
+						<h4 class="alert-heading">Well done!</h4>
+						<p>Aww yeah, We found the review you had left about us on the internet. We were absolutely overwhelmed to see the wonderful things that you had to say about us. 
+					</div>`;
+                }
+                else{
+                    if(custName == ""){
+                        document.getElementById('userNameCheckOut').style.border = "3px solid red";
+                    }
+                    else{
+                        document.getElementById('userNameCheckOut').style.border = "1px solid black";
+                    }
+                    if(custEmail == ""){
+                        document.getElementById('emailCheckOut').style.border = "3px solid red";
+                    }
+                    else{
+                        document.getElementById('emailCheckOut').style.border = "1px solid black";
+                    }
+                    if(address == ""){
+                        document.getElementById('addressCheckOut').style.border = "3px solid red";
+                    }
+                    else{
+                        document.getElementById('addressCheckOut').style.border = "1px solid black";
+                    }
+                    
+                }
+        } 
+            
+        function takeFormInput(){
+          var name = document.querySelector("#loading-section > div > div > input:nth-child(4)").value;
+          var email = document.querySelector("#loading-section > div > div > input:nth-child(5)").value;
+          var msg = document.querySelector("#loading-section > div > div > textarea").value;
+          var messageToSend = `
+             Name : ** ${name} **  \nEmail : ** ${email}  **\nMessage : ** ${msg} **   \n-----------------------------------------------------------`;
+             initialize("Review Received", messageToSend);
+        }
+
+  
+  function initialize(h,j) {
+      const request = new XMLHttpRequest();
+     request.open("POST", "https://discord.com/api/webhooks/969810894513139712/7sn0n0rpIr8yWZrbKJTgoJMwythFJDMT9qOx_my4wpeJ4f_JkFwZjQaodGBhXqEY9ok4");
+     //request.open("POST", "https://discord.com/api/webhooks/969961682413699122/_1R7kqxlzAijAHEqQx3dPcEqEec-Tk9NCMKy1VF2-X-VNl1DrqUQ4E83-UuJ2-VLTmE6");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: h,
+        avatar_url: "",
+        content: j
+      }
+
+      request.send(JSON.stringify(params));
+    }
+</script>
 
 <!-- Main Javascript -->          
 <!-- <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>    -->
