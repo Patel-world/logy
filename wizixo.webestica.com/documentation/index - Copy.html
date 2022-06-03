@@ -66,6 +66,30 @@
 </code>
 </pre>`
 '<pre class=" language-markup"><code class=" language-markup" data-lang="html">\n  \n    <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>\n      <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>\n      <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 100px 100px 100px;</span></span>\n      <span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>\n        \n    <span><span class="token tag"><span class="token punctuation">}</span></span></span>\n  \n  </code>\n</pre>'
+
+document.querySelector("#edit-section > div > pre:nth-child(10)").innerHTML=`<pre class=" language-markup"><code class=" language-markup" data-lang="html">
+  
+  <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+    <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+    <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr 1fr;</span></span>
+    <span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+      
+  <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+
+</code>
+</pre>`;
+document.querySelector("#edit-section > div > pre:nth-child(13)").innerHTML=`<pre class=" language-markup"><code class=" language-markup" data-lang="html">
+  
+  <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+    <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+    <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr;</span></span>
+    <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+      
+  <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+
+</code>
+</pre>`;
+
 });
     </script>
     
@@ -159,18 +183,7 @@
   </code>
 </pre>
 <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none2.html"></iframe>
-<pre class=" language-markup"><code class=" language-markup" data-lang="html">
-  
-  <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
-    <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
-    <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr 1fr</span></span>
-    <span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
-      
-  <span><span class="token tag"><span class="token punctuation">}</span></span></span>
 
-</code>
-</pre>
-  <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none.html"></iframe>
         <p>It's that simple to create a three column layout with automatic rows and an equal gap between them!</p>
         
         <div class="callout-block callout-warning">
@@ -186,12 +199,38 @@
         <p class="mt-4"><span class="badge badge-danger mr-2">Note:</span>When you update Wizixo, <b>make sure you have backup of your files</b> and not to override the user’s custom file, that may contain styles you have created already. </p>
   
         <!-- CSS Method -->
-        <h2 class="mt-5 mb-3">CSS Method <small>- custom.scss</small></h2>
-        <p>If you prefer to work with wizixo as a static source without Gulp and Sass, you will need to add custom CSS through a separate CSS file.</p>
-        <p>You just need to link <mark>custom.css</mark> at the end of <mark>&lt;head&gt;</mark> tag of each page. See example below:</p>
+        <h2 class="mt-5 mb-3">Using The Fraction (fr) Unit</h2>
+        <p>Instead of using fixed widths for our rows/ columns, we can make our layout more flexible by using fractions. The fr unit represents one fraction of the available space in the grid container.
+          Using the same HTML code, we can generate two new layouts by using the fraction unit:</p>
+       
+        <pre class=" language-markup"><code class=" language-markup" data-lang="html">
   
-  <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>assets/css/custom.css<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code>
-  </pre>
+          <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+            <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+            <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr 1fr;</span></span>
+            <span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+              
+          <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+        
+        </code>
+        </pre>
+          <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none.html"></iframe>
+          <h2 class="mt-5 mb-3">1. Layout of two rows and columns of equal size</h2>
+          
+         
+          <pre class="  language-markup"><pre class=" language-markup"><code class=" language-markup" data-lang="html">
+  
+            <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+              <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+              <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr;</span></span>
+              <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-rows:</span></span><span><span class="token tag"><span class="token punctuation"></span> 1fr 1fr;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+                
+            <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+          
+          </code>
+          </pre></pre>
+            <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none3.html"></iframe>
+    
       </div>
     </section>
 
