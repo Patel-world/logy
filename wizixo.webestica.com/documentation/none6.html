@@ -90,7 +90,7 @@
     <div id="contur">
       <div
         id="resizable"
-        class="ui-widget-content ui-resizable grid-container5"
+        class="ui-widget-content ui-resizable grid-container6"
       >
         <div id="resizabl1" class="ui-widget-content ui-resizable grid-item1" style="background-color: blueviolet">1</div>
         <div id="resizabl2" class="ui-widget-content ui-resizable grid-item1" style="background-color: crimson">2</div>
@@ -99,10 +99,10 @@
       </div>
     </div>
     <style>
-      .grid-container5 {
+      .grid-container6 {
         display: grid;
        grid-template-columns: repeat(3, 1fr);
-       grid-template-rows: 100px;
+       grid-template-rows: minmax(100px, auto);
        gap:  1em;
       }
       .grid-item1 {

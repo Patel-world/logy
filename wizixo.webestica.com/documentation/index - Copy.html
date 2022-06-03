@@ -100,12 +100,34 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
   
   </code></pre>`;
 
-  document.querySelector("#edit-section > div > pre:nth-child(20)").innerHTML=`<pre class=" language-markup"><code class=" language-markup" data-lang="html">
+  document.querySelector("#edit-section > div > pre:nth-child(21)").innerHTML=`<pre class=" language-markup"><code class=" language-markup" data-lang="html">
     
     <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
       <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
       <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> repeat(3, 1fr);</span></span>
       <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-rows:</span></span><span><span class="token tag"><span class="token punctuation"></span> 100px;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+        
+    <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+  
+  </code>
+  </pre>`;
+  document.querySelector("#edit-section > div > pre:nth-child(27)").innerHTML=`<pre class=" language-markup"><code class=" language-markup" data-lang="html">
+    
+    <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+      <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+      <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> repeat(3, 1fr);</span></span>
+      <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-rows:</span></span><span><span class="token tag"><span class="token punctuation"></span> 100px;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+        
+    <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+  
+  </code>
+  </pre>`;
+  document.querySelector("#edit-section > div > pre:nth-child(30)").innerHTML=`<pre class=" language-markup"><code class=" language-markup" data-lang="html">
+    
+    <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+      <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+      <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> repeat(3, 1fr);</span></span>
+      <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-rows:</span></span><span><span class="token tag"><span class="token punctuation"></span> minmax(100px, auto);</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
         
     <span><span class="token tag"><span class="token punctuation">}</span></span></span>
   
@@ -272,7 +294,7 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
                   <p style="color:#343a40!important">As you can see, larger fractions occupy more space than the smaller fractions in the available space.</p>
                 </div>
               </div>
-
+              <h2 class="mt-5 mb-3">3. The repeat() function</h2>
               <p>You can use the <mark>CSS repeat()</mark> function as an alternative for specifying the number of columns you want your grid to repeat creating.</p>
               <pre class=" language-markup"><code class=" language-markup" data-lang="html">
     
@@ -287,6 +309,35 @@ document.querySelector("#edit-section > div > pre:nth-child(16)").innerHTML=`<pr
               </pre>
                 <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none5.html"></iframe>
                 <p>Now the grid will automatically generate rows of three columns depending on the number of items! We're also using grid-auto-rows to make each generated row have the height of 100 pixels.</p>
+                <h2 class="mt-5 mb-3">4. The minmax() function</h2>
+              <p>You can use the <mark>CSS repeat()</mark> function as an alternative for specifying the number of columns you want your grid to repeat creating.</p>
+              <h6 class="mt-3">Fixed Rows</h6>
+              <pre class=" language-markup"><code class=" language-markup" data-lang="html">
+    
+                <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+                  <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+                  <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> repeat(3, 1fr);</span></span>
+                  <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-rows:</span></span><span><span class="token tag"><span class="token punctuation"></span> 100px;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+                    
+                <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+              
+              </code>
+              </pre>
+                <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none5.html"></iframe>
+                <h6 class="mt-3">Using Minmax()</h6>
+              <pre class=" language-markup"><code class=" language-markup" data-lang="html">
+    
+                <span> <span class="token attr-name">.grid-container</span><span class="token punctuation"> {</span></span>
+                  <span><span class="token tag"></span> <span class="token attr-value"><span class="token punctuation"></span>display: </span></span><span><span class="token tag"><span class="token punctuation"></span>grid;</span><span class="token punctuation"></span></span>
+                  <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-columns:</span></span><span><span class="token tag"><span class="token punctuation"></span> repeat(3, 1fr);</span></span>
+                  <span> <span class="token attr-value"><span class="token punctuation"></span>grid-template-rows:</span></span><span><span class="token tag"><span class="token punctuation"></span> minmax(100px, auto);</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> <span class="token attr-value"><span class="token punctuation"></span>gap:</span></span>  <span><span class="token tag"><span class="token punctuation"></span>1em;</span></span>
+                    
+                <span><span class="token tag"><span class="token punctuation">}</span></span></span>
+              
+              </code>
+              </pre>
+                <iframe src="https://patel-world.github.io/logy/wizixo.webestica.com/documentation/none6.html"></iframe>
+                <p>As you can see, the first row will get resized to fit the whole content, but the second row will maintain a min of 100px since no resizing is needed.</p>
       </div>
     </section>
 
